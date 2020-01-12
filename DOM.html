@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipulasi DOM</title>
+</head>
+<body>
+	<div>
+		<button onclick="myFunction()">Tambah lagi</button>
+		<br/>
+		<span id="myspan">Saya yang diulang</span>
+		<br/>
+	</div>
+</body>
+	<script>
+		function myFunction() {
+			var elm = document.getElementById('myspan')
+			elm.insertAdjacentHTML('afterend', " Saya yang diulang lagi <br />");
+		}
+	</script>
+</html>
